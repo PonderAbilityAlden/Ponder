@@ -80,8 +80,8 @@ tr:last-child td { border-bottom: 0; }
 .neg { color: var(--down); }
 .pos { color: var(--up); }
 
-/* Your-words boxes */
-.todo { border: 1px dashed var(--muted); border-radius: 8px; padding: 14px 16px; color: var(--muted); font-style: italic; max-width: 70ch; }
+/* Written analysis */
+.prose { max-width: 70ch; margin: 0; }
 
 /* Model tool */
 .tool { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 24px; }
@@ -138,7 +138,7 @@ footer p { max-width: 80ch; }
     <div class="wrap">
       <div class="kicker">Stock calls, dated and graded in public</div>
       <h1>Four outcomes, weighed. Graded a year later.</h1>
-      <p class="todo" style="margin-top:16px">Your words here: one or two sentences on what Ponder is and why you're doing it.</p>
+      <p class="lede">Free scenarios and projections on the stocks making headlines, or about to. Ponder exists to build understanding, and to show that the market can be reasonably understood one company at a time.</p>
       <div class="notice"><strong>Not financial advice.</strong> Ponder publishes the author's own scenarios and estimates for education and discussion. Nothing here is a recommendation to buy or sell any security. Forecasts can be wrong, and past results don't predict future ones. Do your own research.</div>
 
       <div class="call" aria-labelledby="call-title">
@@ -184,16 +184,16 @@ footer p { max-width: 80ch; }
         </tbody>
       </table>
     </div>
-    <p class="caption">Consensus EPS for the next 12 months: $19.47. Forward P/E when logged: 16.4x. Probability-weighted EPS: $18.29.</p>
+    <p class="caption">Consensus EPS for fiscal 2027 (Nov 2026 to Oct 2027, roughly the next 12 months): $19.47, the average of 48 analysts per Yahoo Finance, Nov 8, 2026. Forward P/E when logged: 16.4x. Probability-weighted EPS: $18.29.</p>
 
     <h3>My thesis</h3>
-    <p class="todo">Your words here: why you think Broadcom lands near the Base case, and why the P/E should recover.</p>
+    <p class="prose">Broadcom stands on two legs: fast-growing AI chip sales and a steady software business. AI spending could slow, but Broadcom's long-term contracts with its biggest customers give me confidence it will hit its expected revenue. As investors see that revenue arrive, I expect them to pay more for each dollar of earnings, pushing the P/E from about 16.4x toward 18x.</p>
 
     <h3>What would prove me wrong</h3>
-    <p class="todo">Your words here: the signs that would make you change your mind.</p>
+    <p class="prose">Broadcom relies on a handful of big partners to keep spending. If their spending on AI chips and data centers falls in 2027, the growth story weakens. The nearest warning sign would be Q4 AI revenue coming in below Broadcom's own $21.7B guidance, which would likely shake investors' trust.</p>
 
     <h3>First test: Dec 9, 2026</h3>
-    <p class="todo">Your words here: what you're watching in the Q4 report (Broadcom guided AI revenue to $21.7B).</p>
+    <p class="prose">In the Q4 report, I'll be watching two things: whether AI revenue reaches the expected $21.7B, and what Broadcom says about its growth plans for next year. A fail could take a few forms, from revenue falling short to a weaker outlook for the year ahead.</p>
   </div>
 </section>
 
@@ -256,7 +256,7 @@ footer p { max-width: 80ch; }
       <div class="step"><div class="n">02</div><p>Set four cases, from Stress to Bull, and give each a probability.</p></div>
       <div class="step"><div class="n">03</div><p>Log the call with a date and grade it against a no-opinion baseline and the S&amp;P 500, misses included.</p></div>
     </div>
-    <p class="todo">Your words here: what you tested (cheap vs its own history, 29 large companies, 2019 to 2025), what you found, and what it taught you.</p>
+    <p class="prose">Before making any calls, I tested a simple idea: do stocks that look cheap compared with their own past P/E beat the market over the next year? Across 29 large companies from 2019 to 2025, I found no reliable signal. The cheap stocks actually did slightly worse, though not by enough to mean anything. That taught me a backtest alone can't prove a model works. So instead of claiming an edge up front, Ponder logs every call with a date and grades it in public, misses included.</p>
   </div>
 </section>
 
@@ -295,7 +295,7 @@ footer p { max-width: 80ch; }
 
 <footer>
   <div class="wrap">
-    <p><strong>Disclaimer.</strong> Ponder is for education and discussion only and is not investment, tax or legal advice. The author is not a licensed financial adviser. Scenarios, estimates and targets are the author's opinions as of the date shown and may change without notice. Figures from third parties are believed reliable but are not guaranteed. The author may hold positions in the securities discussed. You are responsible for your own investment decisions.</p>
+    <p><strong>Disclaimer.</strong> Ponder is for education and discussion only and is not investment, tax or legal advice. The author is not a licensed financial adviser. Scenarios, estimates and targets are the author's opinions as of the date shown and may change without notice. Figures from third parties are believed reliable but are not guaranteed. The author does not currently hold positions in the securities discussed and will disclose any future positions. You are responsible for your own investment decisions.</p>
     <p>&copy; 2026 Ponder</p>
   </div>
 </footer>
